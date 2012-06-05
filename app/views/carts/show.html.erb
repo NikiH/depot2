@@ -7,4 +7,6 @@
   <% @cart.line_items.each do |item| %>
     <li><%= item.quantity %> &times;<%= item.product.title %></li>
   <% end %>
+  <%= button_to 'Empty cart', @cart, method: :delete,
+    confirm: 'Are you sure?' %>
 </ul>
