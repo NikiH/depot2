@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Second Hand Book Store Niki Hausammann</title>
+  <title>Pragprog Books Online Store</title>
   <%= stylesheet_link_tag "application" %><!-- <label id="code.slt"/> -->
   <%= javascript_include_tag "application" %><!-- <label id="code.jlt"/> -->
   <%= csrf_meta_tag %><!-- <label id="code.csrf"/> -->
@@ -9,7 +9,7 @@
 <body class="<%= controller.controller_name %>">
   <div id="banner">
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Pragmatic Bookshelf" %><!-- <label id="code.depot.e.title"/> -->
+    <%= @page_title || "Niki's Bookshelf" %>
   </div>
   <div id="columns">
     <div id="side">
@@ -21,7 +21,7 @@
       </ul>
     </div>
     <div id="main">
-      <%= yield %><!-- <label id="code.depot.e.include"/> -->
+      <%= yield %>
     </div>
   </div>
 </body>
